@@ -1,0 +1,51 @@
+/* ############ GRID ############ */
+
+.behaviorGrid {
+    display              : grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows   : 1fr 1fr 1fr;
+    gap                  : 0.8px 0px;
+    grid-template-areas  :
+        ". . . . ."
+        "el_1 el_2 el_3 el_4 el_5"
+        ". . . . .";
+    width : 100%;
+    height: 100%;
+}
+
+.el_1 {
+    grid-area: el_1;
+}
+
+.el_2 {
+    grid-area: el_2;
+}
+
+.el_3 {
+    grid-area: el_3;
+}
+
+.el_4 {
+    grid-area: el_4;
+}
+
+.el_5 {
+    grid-area: el_5;
+}
+
+/* ############ FLEXBOX ############ */
+
+.behaviorFlex {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    width          : 100%;
+    height         : 100px;
+}
+
+.behaviorFlex .el {
+    padding: auto;
+    width  : 20%;
+    border: 1px solid #000;
+    flex   : 0 1 auto;
+}

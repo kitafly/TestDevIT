@@ -1,0 +1,19 @@
+*{
+    font-size: 32px;
+}
+
+.buttonClass {
+    background-color: #090;
+}
+
+.buttonClass:active {
+    background-color: #050;
+}
+
+.buttonClass:disabled {
+    background-color: #999;
+}
+
+.buttonClass + .danger{
+    background-color: #555;
+}
